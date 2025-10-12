@@ -41,6 +41,7 @@
 
 <h3>Table of Contents:</h3>
         <ol>
+            <!-- Change md to html -->
             <li><a href="topic1.html">The Birth of the World Wide Web</a></li>
             <li><a href="topic2.html">The Evolution of HTML</a></li>
             <li><a href="concepts.html">Key Concepts</a></li>
@@ -57,6 +58,7 @@
     </footer>
 </body>
 </html>
+
 
 
 

@@ -1,0 +1,88 @@
+/* ======= Base Page Styles ======= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* ======= Header ======= */
+header {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 1.2em 0;
+}
+
+/* ======= Navigation Bar ======= */
+.menu {
+    display: flex; /* Flexbox layout */
+    justify-content: center;
+    list-style: none;
+    background-color: #0066cc;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    display: block;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.menu li a:hover {
+    background-color: #99ccff;
+    color: #00264d;
+}
+
+/* Active page link */
+.menu li a.active {
+    border-bottom: 3px solid #ffcc00;
+}
+
+/* ======= Main Content ======= */
+main {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 6px;
+}
+
+/* ======= Tables ======= */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* ======= Footer ======= */
+footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}

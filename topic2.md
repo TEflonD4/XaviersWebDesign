@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Evolution of HTML</title>
+        The Evolution of HTML
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,7 +27,7 @@
         Over time, HTML has evolved to include new elements for structure, multimedia, and interactivity.
     </p>
 
-    <h3>Major HTML Versions</h3>
+<h3>Major HTML Versions</h3>
     <ul>
         <li><strong>HTML 1.0 (1993):</strong> The very first version, basic formatting only.</li>
         <li><strong>HTML 2.0 (1995):</strong> Standardized core features like forms and images.</li>
@@ -41,3 +41,4 @@
 </footer>
 </body>
 </html>
+

@@ -43,7 +43,7 @@
             <li><a href="topic1.md">The Birth of the World Wide Web</a></li>
             <li><a href="topic2.md">The Evolution of HTML</a></li>
             <li><a href="concepts.md">Key Concepts</a></li>
-            <li><a href="references.md">References & Resources</a></li>
+            <li><a href="references.html">References & Resources</a></li>
             <li><a href="about.md">About the Author</a></li>
         </ol>
 
@@ -56,6 +56,7 @@
     </footer>
 </body>
 </html>
+
 
 
 

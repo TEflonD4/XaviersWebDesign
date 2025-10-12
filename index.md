@@ -13,11 +13,11 @@
         <nav>
             <ul class="menu">
                 <li><a href="index.md" class="active">Home</a></li>
-                <li><a href="topic1.md">The Birth of the World Wide Web</a></li>
-                <li><a href="topic2.md">The Evolution of HTML</a></li>
-                <li><a href="concepts.md">Key Concepts</a></li>
+                <li><a href="topic1.html">The Birth of the World Wide Web</a></li>
+                <li><a href="topic2.html">The Evolution of HTML</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
                 <li><a href="references.html">References</a></li>
-                <li><a href="about.md">About</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -40,11 +40,11 @@
 
 <h3>Table of Contents:</h3>
         <ol>
-            <li><a href="topic1.md">The Birth of the World Wide Web</a></li>
-            <li><a href="topic2.md">The Evolution of HTML</a></li>
-            <li><a href="concepts.md">Key Concepts</a></li>
+            <li><a href="topic1.html">The Birth of the World Wide Web</a></li>
+            <li><a href="topic2.html">The Evolution of HTML</a></li>
+            <li><a href="concepts.html">Key Concepts</a></li>
             <li><a href="references.html">References & Resources</a></li>
-            <li><a href="about.md">About the Author</a></li>
+            <li><a href="about.html">About the Author</a></li>
         </ol>
 
         
@@ -56,6 +56,7 @@
     </footer>
 </body>
 </html>
+
 
 
 

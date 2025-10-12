@@ -12,7 +12,7 @@
         <h1>The History of the Web and HTML</h1>
         <nav>
             <ul class="menu">
-                <li><a href="index.md" class="active">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="topic1.html">The Birth of the World Wide Web</a></li>
                 <li><a href="topic2.html">The Evolution of HTML</a></li>
                 <li><a href="concepts.html">Key Concepts</a></li>
@@ -56,6 +56,7 @@
     </footer>
 </body>
 </html>
+
 
 
 

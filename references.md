@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>References & Resources</title>
+    References & Resources
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,3 +35,4 @@
 </footer>
 </body>
 </html>
+

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Birth of the World Wide Web</title>
+    The Birth of the World Wide Web
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,14 +23,13 @@
 <main>
     <h2>The Birth of the World Wide Web</h2>
 
-    <p>
+<p>
         The World Wide Web was invented by <strong>Tim Berners-Lee</strong> in 1989 while working at CERN. 
         His goal was to create a system that allowed scientists to share and access documents easily over the internet.
-    </p>
+</p>
 
-    <img src="images/tim-berners-lee.jpg" alt="Tim Berners-Lee" width="350">
 
-    <h3>Timeline of Key Events</h3>
+<h3>Timeline of Key Events</h3>
     <table>
         <caption>Early Development of the Web</caption>
         <tr>
@@ -61,3 +60,4 @@
 </footer>
 </body>
 </html>
+

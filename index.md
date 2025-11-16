@@ -19,7 +19,7 @@
                 <li><a href="concepts.html">Key Concepts</a></li>
                 <li><a href="references.html">References</a></li>
                 <li><a href="about.html">About</a></li>
-                <a href="quiz.html">Quiz</a>
+                <li><a href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
     </header>
@@ -59,6 +59,7 @@
     </footer>
 </body>
 </html>
+
 
 
 

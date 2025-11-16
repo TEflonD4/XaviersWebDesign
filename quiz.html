@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History of WWW & HTML - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Additional quiz-specific styling */
+        .quiz-container {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+        }
+
+        .question h3 {
+            margin-bottom: 10px;
+        }
+
+        #results {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 6px;
+            display: none;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .incorrect {
+            color: red;
+        }
+
+        .btn {
+            padding: 10px 18px;
+            margin-right: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .submit-btn {
+            background: #007acc;
+            color: #fff;
+        }
+
+        .reset-btn {
+            background: #444;
+            color: white;
+        }
+
+        input[type=text] {
+            width: 60%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Menu (keep consistent on all pages) -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="topic1.html">The History of the WWW</a>
+        <a href="topic2.html">The History of HTML</a>
+        <a href="keyconcepts.html">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+
+    <div class="quiz-container">
+        <h1>Self-Assessment Quiz: History of WWW & HTML</h1>
+        <p>Test your understanding of the World Wide Web and HTML.</p>
+
+        <form id="quizForm">
+
+            <!-- 1. Fill-in-the-blank -->
+            <div class="question">
+                <h3>1. Who invented the World Wide Web?</h3>
+                <input type="text" id="q1" placeholder="Enter your answer">
+            </div>
+
+            <!-- 2. Multiple choice -->
+            <div class="question">
+                <h3>2. In what year was HTML first released?</h3>
+                <label><input type="radio" name="q2" value="1991"> 1991</label><br>
+                <label><input type="radio" name="q2" value="1998"> 1998</label><br>
+                <label><input type="radio" name="q2" value="2004"> 2004</label><br>
+            </div>
+
+            <div class="question">
+                <h3>3. What does HTML stand for?</h3>
+                <label><input type="radio" name="q3" value="a"> Hyperlinks and Text Markup Language</label><br>
+                <label><input type="radio" name="q3" value="b"> Home Tool Markup Language</label><br>
+                <label><input type="radio" name="q3" value="c"> HyperText Markup Language</label><br>
+            </div>
+
+            <div class="question">
+                <h3>4. Who created HTML?</h3>
+                <label><input type="radio" name="q4" value="Berners-Lee"> Tim Berners-Lee</label><br>
+                <label><input type="radio" name="q4" value="Jobs"> Steve Jobs</label><br>
+                <label><input type="radio" name="q4" value="Musk"> Elon Musk</label><br>
+            </div>
+
+            <!-- Multi-select -->
+            <div class="question">
+                <h3>5. Which of the following are web browsers? (Select all that apply)</h3>
+                <label><input type="checkbox" name="q5" value="Chrome"> Google Chrome</label><br>
+                <label><input type="checkbox" name="q5" value="Firefox"> Mozilla Firefox</label><br>
+                <label><input type="checkbox" name="q5" value="Linux"> Linux</label><br>
+                <label><input type="checkbox" name="q5" value="Safari"> Safari</label><br>
+            </div>
+
+            <button type="button" class="btn submit-btn" onclick="gradeQuiz()">Submit Quiz</button>
+            <button type="reset" class="btn reset-btn" onclick="resetQuiz()">Reset</button>
+
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script>
+        function gradeQuiz() {
+            let score = 0;
+            let feedback = "";
+
+            // Correct answers:
+            const answers = {
+                q1: "tim berners-lee",
+                q2: "1991",
+                q3: "c",
+                q4: "Berners-Lee",
+                q5: ["Chrome", "Firefox", "Safari"]
+            };
+
+            /* Q1 Fill in blank */
+            const q1 = document.getElementById("q1").value.trim().toLowerCase();
+            if (q1 === answers.q1) {
+                score++;
+                feedback += "<p class='correct'>1. Correct!</p>";
+            } else {
+                feedback += "<p class='incorrect'>1. Incorrect. The correct answer is: Tim Berners-Lee</p>";
+            }
+
+            /* Q2 */
+            const q2 = document.querySelector("input[name='q2']:checked");
+            if (q2 && q2.value === answers.q2) {
+                score++;
+                feedback += "<p class='correct'>2. Correct!</p>";
+            } else {
+                feedback += "<p class='incorrect'>2. Incorrect. Correct answer: 1991</p>";
+            }
+
+            /* Q3 */
+            const q3 = document.querySelector("input[name='q3']:checked");
+            if (q3 && q3.value === answers.q3) {
+                score++;
+                feedback += "<p class='correct'>3. Correct!</p>";
+            } else {
+                feedback += "<p class='incorrect'>3. Correct answer: HyperText Markup Language</p>";
+            }
+
+            /* Q4 */
+            const q4 = document.querySelector("input[name='q4']:checked");
+            if (q4 && q4.value === answers.q4) {
+                score++;
+                feedback += "<p class='correct'>4. Correct!</p>";
+            } else {
+                feedback += "<p class='incorrect'>4. Correct answer: Tim Berners-Lee</p>";
+            }
+
+            /* Q5 multi-select */
+            const q5selected = Array.from(document.querySelectorAll("input[name='q5']:checked")).map(x => x.value);
+
+            const correct = answers.q5;
+            const isCorrect =
+                q5selected.length === correct.length &&
+                q5selected.every(val => correct.includes(val));
+
+            if (isCorrect) {
+                score++;
+                feedback += "<p class='correct'>5. Correct!</p>";
+            } else {
+                feedback += "<p class='incorrect'>5. Correct answer: Chrome, Firefox, Safari</p>";
+            }
+
+            /* Results output */
+            const results = document.getElementById("results");
+            const passFail = score >= 3 ? "PASS" : "FAIL";
+            results.style.display = "block";
+            results.innerHTML = `
+                <h2>Your Results</h2>
+                <p><strong>Total Score:</strong> ${score}/5</p>
+                <p><strong>Status:</strong> ${passFail}</p>
+                <h3>Question-by-Question Feedback</h3>
+                ${feedback}
+            `;
+
+            results.style.background = score >= 3 ? "#d4f7d4" : "#f7d4d4";
+        }
+
+        function resetQuiz() {
+            document.getElementById("results").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
